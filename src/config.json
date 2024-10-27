@@ -1,0 +1,68 @@
+
+ {
+    "data_preprocessing": {
+        "clean_data.csv": "data/clean/final_data.csv"
+    },
+
+    "data_transformation": {
+        "raw_weather_data_path" : "data/raw/weather.csv",
+        "raw_air_quality_data_path": "data/raw/air_quality.csv",
+        "clean_data_path" : "data/clean",
+        "merged_data_path": "data/clean/merged_data.csv",
+        "final_data_path": "data/clean/final_data.csv"
+
+    },
+
+    "data_ingestion": {
+        "raw_weather_data_csv" : "data/raw/weather.csv",
+        "raw_air_quality_data_csv" : "data/raw/air_quality.csv",
+        "db_path" : "data/",
+        "weather_db_path" : "data/weather.db",
+        "air_quality_db_path" : "data/air_quality.db",
+        "weather_url" : "https://techassessment.blob.core.windows.net/aiap18-assessment-data/weather.db",
+        "air_quality_url" : "https://techassessment.blob.core.windows.net/aiap18-assessment-data/air_quality.db"
+
+    },
+
+    "model_training": {
+            "KNeighbors Classifer" : {
+                "params" : {
+
+                }
+            },
+            "SVM" : {
+                "params" : {
+
+                }
+            },
+            "Random Forest" : {
+                "params" : {
+                    "max_depth": 80,
+                    "max_features": "sqrt",
+                    "min_samples_leaf": 1,
+                    "min_samples_split": 2,
+                    "n_estimators": 600
+                }        
+            },
+            "Decision Tree" : {
+                "params" :{
+                    "criterion": "gini",
+                    "max_depth": 60,
+                    "min_samples_leaf": 1,
+                    "min_samples_split": 2,
+                    "splitter": "best"
+                }
+            }
+        
+    },
+
+    "deep_learning_model" : {
+        
+    },
+
+    "models" : {
+        "model_path" : "models/"
+    }
+    
+}
+

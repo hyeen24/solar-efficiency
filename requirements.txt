@@ -1,0 +1,10 @@
+pandas
+numpy
+requests
+seaborn
+matplotlib
+imbalanced-learn
+scikit-learn
+scipy
+dataclasses
+tensorflow
